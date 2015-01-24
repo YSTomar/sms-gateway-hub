@@ -6,7 +6,7 @@ class Sms
 	base_uri 'http://login.smsgatewayhub.com/smsapi'
 
 	def initialize(user, password)
-	@options = { query: {user: user, password: password, gwid: 2 } }
+	@options = { query: {user: user, password: password, gwid: 2, pwd: password } }
 	end
 
 	def check_balance
